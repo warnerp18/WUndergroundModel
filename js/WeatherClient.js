@@ -32,23 +32,23 @@
             }
         });
 
-        WeatherClient.prototype.testInputs = function() {
-            "use strict";
-            var input = {};
-            var inputs = $(':input');
+        // WeatherClient.prototype.testInputs = function() {
+        //     "use strict";
+        //     var input = {};
+        //     var inputs = $(':input');
 
-            var nothingIsEmpty = Array.prototype.slice.call(inputs).reduce(function(nothingEmpty, currentPointer) {
-                return nothingEmpty && !!currentPointer.value;
-            }, true);
+        //     var nothingIsEmpty = Array.prototype.slice.call(inputs).reduce(function(nothingEmpty, currentPointer) {
+        //         return nothingEmpty && !!currentPointer.value;
+        //     }, true);
 
 
-            if (!nothingIsEmpty) {
-                window.location.replace("#/")
-                return true;
-            } else {
-                return false;
-            }
-        };
+        //     if (!nothingIsEmpty) {
+        //         window.location.replace("#/")
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // };
 
         WeatherClient.prototype.createInputObject = function() {
             var input = {};
